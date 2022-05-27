@@ -61,21 +61,3 @@ plt.xticks(china_dates.iloc[0:len(china_dates):4],rotation=-90)
 plt.title('Total cases and death in China')
 plt.ylabel('number')
 plt.show()
-y3 = []
-for i in range(len(covid_data)):
-    if covid_data.iloc[i, 1] == "United States":
-        y3.append(True)
-    else:
-        y3.append(False)
-print(covid_data.iloc[y3, :])
-US_dates = covid_data.iloc[y3, 0]
-US_cases = covid_data.iloc[y3, 2]
-US_death = covid_data.iloc[y3, 3]
-plt.boxplot((US_death, US_cases), vert = False)
-plt.title('Total cases and deaths in the United States')
-plt.show()
-plt.plot(US_dates, US_death, "ro", US_dates, US_cases, 'b+')
-plt.xticks(US_dates.iloc[0:len(US_dates):4],rotation=-90)
-plt.title('Total cases and death in the United States')
-plt.ylabel('number')
-plt.show()
