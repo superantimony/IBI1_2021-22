@@ -1,0 +1,3 @@
+Question: How did the total cases develope overtime in Spain?
+Line number:6721-6812
+Result: There were few cases in Spain before March 1st, 2020, however the number of total cases grew rapidly in March, 2020.
